@@ -9,7 +9,7 @@
 import UIKit
 
 open class Dropper: UIView {
-    open let TableMenu: UITableView = UITableView()
+    public let TableMenu: UITableView = UITableView()
     /**
     Alignment of the dropdown menu compared to the button
     
@@ -180,7 +180,7 @@ open class Dropper: UIView {
         TableMenu.register(DropperCell.self, forCellReuseIdentifier: "cell")
         // Styling
         TableMenu.backgroundColor = UIColor.lightGray
-        TableMenu.separatorStyle = UITableViewCellSeparatorStyle.none
+        TableMenu.separatorStyle = UITableViewCell.SeparatorStyle.none
         TableMenu.bounces = false
         if (trimCorners) {
             TableMenu.layer.cornerRadius = 9.0
